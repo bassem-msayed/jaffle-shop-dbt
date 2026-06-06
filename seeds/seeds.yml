@@ -1,0 +1,17 @@
+version: 2
+
+seeds:
+  - name: employees
+    description: "A list of employee ids and their associated customer ids"
+    columns:
+      - name: employee_id
+        description: "Employee ID"
+        data_tests: 
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Customer ID associated with the employee"
+      - name: email
+        description: "Email address of the employee"
+        data_tests:
+          - not_null
